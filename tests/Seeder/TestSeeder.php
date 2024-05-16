@@ -1,12 +1,12 @@
 <?php
 
-namespace BeyondCode\QueryDetector\Tests\Seeder;
+namespace Mrkatz\QueryDetector\Tests\Seeder;
 
 use Illuminate\Database\Seeder;
-use BeyondCode\QueryDetector\Tests\Models\Post;
-use BeyondCode\QueryDetector\Tests\Models\Author;
-use BeyondCode\QueryDetector\Tests\Models\Profile;
-use BeyondCode\QueryDetector\Tests\Models\Comment;
+use Mrkatz\QueryDetector\Tests\Models\Post;
+use Mrkatz\QueryDetector\Tests\Models\Author;
+use Mrkatz\QueryDetector\Tests\Models\Profile;
+use Mrkatz\QueryDetector\Tests\Models\Comment;
 
 class TestSeeder extends Seeder
 {

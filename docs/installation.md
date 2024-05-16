@@ -11,7 +11,7 @@ The Laravel N+1 query detector helps you to increase your application's performa
 You can install the package via composer:
 
 ```
-composer require beyondcode/laravel-query-detector --dev
+composer require mrkatz/laravel-query-detector --dev
 ```
 
 The package will automatically register itself.

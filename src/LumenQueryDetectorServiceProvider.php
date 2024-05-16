@@ -1,5 +1,5 @@
 <?php
-namespace BeyondCode\QueryDetector;
+namespace Mrkatz\QueryDetector;
 
 use Illuminate\Support\ServiceProvider;
 

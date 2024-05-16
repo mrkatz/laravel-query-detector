@@ -1,6 +1,6 @@
 <?php
 
-namespace BeyondCode\QueryDetector;
+namespace Mrkatz\QueryDetector;
 
 use Illuminate\Support\Facades\DB;
 use Illuminate\Support\Arr;
@@ -8,7 +8,7 @@ use Illuminate\Support\Collection;
 use Illuminate\Database\Eloquent\Builder;
 use Symfony\Component\HttpFoundation\Response;
 use Illuminate\Database\Eloquent\Relations\Relation;
-use BeyondCode\QueryDetector\Events\QueryDetected;
+use Mrkatz\QueryDetector\Events\QueryDetected;
 
 class QueryDetector
 {
@@ -90,7 +90,7 @@ class QueryDetector
                 }
 
                 $sources = $this->findSource($backtrace);
-                
+
                 if (empty($sources)) {
                     return;
                 }

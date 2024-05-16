@@ -1,6 +1,6 @@
 <?php
 
-namespace BeyondCode\QueryDetector;
+namespace Mrkatz\QueryDetector;
 
 use Illuminate\Contracts\Http\Kernel;
 use Illuminate\Support\ServiceProvider;

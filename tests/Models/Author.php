@@ -1,6 +1,6 @@
 <?php
 
-namespace BeyondCode\QueryDetector\Tests\Models;
+namespace Mrkatz\QueryDetector\Tests\Models;
 
 use Illuminate\Database\Eloquent\Model;
 

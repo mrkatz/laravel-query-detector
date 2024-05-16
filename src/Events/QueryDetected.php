@@ -1,6 +1,6 @@
 <?php
 
-namespace BeyondCode\QueryDetector\Events;
+namespace Mrkatz\QueryDetector\Events;
 
 use Illuminate\Queue\SerializesModels;
 use Illuminate\Support\Collection;

@@ -1,12 +1,12 @@
 <?php
 
-namespace BeyondCode\QueryDetector\Tests;
+namespace Mrkatz\QueryDetector\Tests;
 
 use Monolog\Logger;
 use Monolog\Handler\TestHandler;
 use Illuminate\Database\Schema\Blueprint;
-use BeyondCode\QueryDetector\Tests\Seeder\TestSeeder;
-use BeyondCode\QueryDetector\QueryDetectorServiceProvider;
+use Mrkatz\QueryDetector\Tests\Seeder\TestSeeder;
+use Mrkatz\QueryDetector\QueryDetectorServiceProvider;
 
 abstract class TestCase extends \Orchestra\Testbench\TestCase
 {

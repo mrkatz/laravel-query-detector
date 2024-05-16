@@ -1,6 +1,6 @@
 <?php
 
-namespace BeyondCode\QueryDetector\Outputs;
+namespace Mrkatz\QueryDetector\Outputs;
 
 use Illuminate\Support\Facades\Log as LaravelLog;
 use Illuminate\Support\Collection;

@@ -1,6 +1,6 @@
 <?php
 
-namespace BeyondCode\QueryDetector\Outputs;
+namespace Mrkatz\QueryDetector\Outputs;
 
 use Illuminate\Support\Collection;
 use Symfony\Component\HttpFoundation\Response;

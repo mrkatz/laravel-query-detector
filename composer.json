@@ -1,50 +1,54 @@
 {
-    "name": "beyondcode/laravel-query-detector",
+    "name": "mrkatz/laravel-query-detector",
     "description": "Laravel N+1 Query Detector",
+    "version": "1.0.0",
     "keywords": [
-        "beyondcode",
+        "mrkatz",
         "laravel-query-detector"
     ],
-    "homepage": "https://github.com/beyondcode/laravel-query-detector",
+    "homepage": "https://github.com/mrkatz/laravel-query-detector",
     "license": "MIT",
     "authors": [
         {
-            "name": "Marcel Pociot",
-            "email": "marcel@beyondco.de",
-            "homepage": "https://beyondcode.de",
+            "name": "Adam Kaczocha",
+            "email": "adamkaczocha@gmail.com",
             "role": "Developer"
         }
     ],
     "require": {
         "php": "^7.1 || ^8.0",
-        "illuminate/support": "^5.5 || ^6.0 || ^7.0 || ^8.0 || ^9.0|^10.0"
+        "illuminate/support": "^6|^7|^8|^9|^10|^11"
     },
     "require-dev": {
         "laravel/legacy-factories": "^1.0",
-        "orchestra/testbench": "^3.0 || ^4.0 || ^5.0 || ^6.0|^8.0",
-        "phpunit/phpunit": "^7.0 || ^8.0 || ^9.0"
+        "orchestra/testbench": "~3.6.7 || ~3.7.8 || ~3.8.6 || ^4.8 || ^5.2 || ^6.0 || ^9.0",
+        "pestphp/pest": "^2.34",
+        "pestphp/pest-plugin-laravel": "^2.4"
     },
     "autoload": {
         "psr-4": {
-            "BeyondCode\\QueryDetector\\": "src"
+            "Mrkatz\\QueryDetector\\": "src"
         }
     },
     "autoload-dev": {
         "psr-4": {
-            "BeyondCode\\QueryDetector\\Tests\\": "tests"
+            "Mrkatz\\QueryDetector\\Tests\\": "tests"
         }
     },
     "scripts": {
-        "test": "vendor/bin/phpunit",
-        "test-coverage": "vendor/bin/phpunit --coverage-html coverage"
+        "test": "vendor/bin/pest",
+        "test-coverage": "vendor/bin/pest --coverage-html coverage"
     },
     "config": {
-        "sort-packages": true
+        "sort-packages": true,
+        "allow-plugins": {
+            "pestphp/pest-plugin": true
+        }
     },
     "extra": {
         "laravel": {
             "providers": [
-                "BeyondCode\\QueryDetector\\QueryDetectorServiceProvider"
+                "Mrkatz\\QueryDetector\\QueryDetectorServiceProvider"
             ]
         }
     }

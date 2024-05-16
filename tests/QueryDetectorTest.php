@@ -1,14 +1,14 @@
 <?php
 
-namespace BeyondCode\QueryDetector\Tests;
+namespace Mrkatz\QueryDetector\Tests;
 
 use Route;
 use Illuminate\Support\Facades\Event;
-use BeyondCode\QueryDetector\QueryDetector;
-use BeyondCode\QueryDetector\Events\QueryDetected;
-use BeyondCode\QueryDetector\Tests\Models\Post;
-use BeyondCode\QueryDetector\Tests\Models\Author;
-use BeyondCode\QueryDetector\Tests\Models\Comment;
+use Mrkatz\QueryDetector\QueryDetector;
+use Mrkatz\QueryDetector\Events\QueryDetected;
+use Mrkatz\QueryDetector\Tests\Models\Post;
+use Mrkatz\QueryDetector\Tests\Models\Author;
+use Mrkatz\QueryDetector\Tests\Models\Comment;
 
 class QueryDetectorTest extends TestCase
 {

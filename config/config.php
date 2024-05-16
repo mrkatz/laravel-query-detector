@@ -40,30 +40,30 @@ return [
      *
      * Alert:
      * Displays an alert on the website
-     * \BeyondCode\QueryDetector\Outputs\Alert::class
+     * \Mrkatz\QueryDetector\Outputs\Alert::class
      *
      * Console:
      * Writes the N+1 queries into your browsers console log
-     * \BeyondCode\QueryDetector\Outputs\Console::class
+     * \Mrkatz\QueryDetector\Outputs\Console::class
      *
      * Clockwork: (make sure you have the itsgoingd/clockwork package installed)
      * Writes the N+1 queries warnings to Clockwork log
-     * \BeyondCode\QueryDetector\Outputs\Clockwork::class
+     * \Mrkatz\QueryDetector\Outputs\Clockwork::class
      *
      * Debugbar: (make sure you have the barryvdh/laravel-debugbar package installed)
      * Writes the N+1 queries into a custom messages collector of Debugbar
-     * \BeyondCode\QueryDetector\Outputs\Debugbar::class
+     * \Mrkatz\QueryDetector\Outputs\Debugbar::class
      *
      * JSON:
      * Writes the N+1 queries into the response body of your JSON responses
-     * \BeyondCode\QueryDetector\Outputs\Json::class
+     * \Mrkatz\QueryDetector\Outputs\Json::class
      *
      * Log:
      * Writes the N+1 queries into the Laravel.log file
-     * \BeyondCode\QueryDetector\Outputs\Log::class
+     * \Mrkatz\QueryDetector\Outputs\Log::class
      */
     'output' => [
-        \BeyondCode\QueryDetector\Outputs\Alert::class,
-        \BeyondCode\QueryDetector\Outputs\Log::class,
+        \Mrkatz\QueryDetector\Outputs\Alert::class,
+        \Mrkatz\QueryDetector\Outputs\Log::class,
     ]
 ];

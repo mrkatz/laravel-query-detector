@@ -1,4 +1,4 @@
 ---
 packageName: Laravel Query Detector
-githubUrl: https://github.com/beyondcode/laravel-query-detector
+githubUrl: https://github.com/mrkatz/laravel-query-detector
 ---

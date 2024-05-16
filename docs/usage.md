@@ -14,7 +14,7 @@ If you rather want this information to be written to your `laravel.log` file, wr
 You can publish the package's configuration using this command:
 
 ```bash
-php artisan vendor:publish --provider="BeyondCode\QueryDetector\QueryDetectorServiceProvider"
+php artisan vendor:publish --provider="Mrkatz\QueryDetector\QueryDetectorServiceProvider"
 ```
 
 This will add the `querydetector.php` file in your config directory with the following contents:
@@ -53,31 +53,31 @@ return [
      *
      * Alert:
      * Displays an alert on the website
-     * \BeyondCode\QueryDetector\Outputs\Alert::class
+     * \Mrkatz\QueryDetector\Outputs\Alert::class
      *
      * Console:
      * Writes the N+1 queries into your browsers console log
-     * \BeyondCode\QueryDetector\Outputs\Console::class
+     * \Mrkatz\QueryDetector\Outputs\Console::class
      *
      * Clockwork: (make sure you have the itsgoingd/clockwork package installed)
      * Writes the N+1 queries warnings to Clockwork log
-     * \BeyondCode\QueryDetector\Outputs\Clockwork::class
+     * \Mrkatz\QueryDetector\Outputs\Clockwork::class
      *
      * Debugbar: (make sure you have the barryvdh/laravel-debugbar package installed)
      * Writes the N+1 queries into a custom messages collector of Debugbar
-     * \BeyondCode\QueryDetector\Outputs\Debugbar::class
+     * \Mrkatz\QueryDetector\Outputs\Debugbar::class
      *
      * JSON:
      * Writes the N+1 queries into the response body of your JSON responses
-     * \BeyondCode\QueryDetector\Outputs\Json::class
+     * \Mrkatz\QueryDetector\Outputs\Json::class
      *
      * Log:
      * Writes the N+1 queries into the Laravel.log file
-     * \BeyondCode\QueryDetector\Outputs\Log::class
+     * \Mrkatz\QueryDetector\Outputs\Log::class
      */
     'output' => [
-        \BeyondCode\QueryDetector\Outputs\Log::class,
-        \BeyondCode\QueryDetector\Outputs\Alert::class,
+        \Mrkatz\QueryDetector\Outputs\Log::class,
+        \Mrkatz\QueryDetector\Outputs\Alert::class,
     ]
 
 ];
@@ -86,7 +86,7 @@ return [
 If you use **Lumen**, you need to copy the config file manually and register the Lumen Service Provider in `bootstrap/app.php` file
 
 ```php
-$app->register(\BeyondCode\QueryDetector\LumenQueryDetectorServiceProvider::class);
+$app->register(\Mrkatz\QueryDetector\LumenQueryDetectorServiceProvider::class);
 ```
 
-If you need additional logic to run when the package detects unoptimized queries, you can listen to the `\BeyondCode\QueryDetector\Events\QueryDetected` event and write a listener to run your own handler. (e.g. send warning to Sentry/Bugsnag, send Slack notification, etc.)
+If you need additional logic to run when the package detects unoptimized queries, you can listen to the `\Mrkatz\QueryDetector\Events\QueryDetected` event and write a listener to run your own handler. (e.g. send warning to Sentry/Bugsnag, send Slack notification, etc.)
