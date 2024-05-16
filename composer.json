@@ -1,7 +1,7 @@
 {
     "name": "mrkatz/laravel-query-detector",
     "description": "Laravel N+1 Query Detector",
-    "version": "1.0.0",
+    "version": "1.9.0",
     "keywords": [
         "mrkatz",
         "laravel-query-detector"
@@ -16,7 +16,7 @@
         }
     ],
     "require": {
-        "php": "^7.1 || ^8.0",
+        "php": "^7.1 || ^8.0 || ^8.2",
         "illuminate/support": "^6|^7|^8|^9|^10|^11"
     },
     "require-dev": {
